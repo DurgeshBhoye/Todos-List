@@ -57,12 +57,12 @@
 
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="title" aria-describedby="emailHelp" onfocus="this.value=''">
             <div id="emailHelp" class="form-text">Add a task to list.</div>
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="description" rows="3"></textarea>
+            <textarea class="form-control" id="description" rows="3" onfocus="this.value=''"></textarea>
         </div>
         <button id="add" class="btn btn-primary">Add to List</button>
         <button id="clear" class="btn btn-danger" onclick="clearStorage()">Clear List</button>
